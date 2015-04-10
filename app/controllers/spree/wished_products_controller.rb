@@ -13,7 +13,7 @@ class Spree::WishedProductsController < Spree::StoreController
     end
 
     respond_with(@wished_product) do |format|
-      format.html { redirect_to wishlist_url(@wishlist) }
+      format.html { redirect_to '/wishlist' }
     end
   end
 
